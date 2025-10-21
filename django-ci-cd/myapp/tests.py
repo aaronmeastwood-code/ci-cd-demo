@@ -1,5 +1,2 @@
-from django.test import TestCase
-
-class SimpleTest(TestCase):
-    def test_addition(self):
-        self.assertEqual(2 + 1, 2)
+def test_failure_example(self):
+    self.assertEqual(2 * 2, 5)  # intentional fail
