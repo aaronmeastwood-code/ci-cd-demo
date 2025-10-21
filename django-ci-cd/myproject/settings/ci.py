@@ -14,10 +14,9 @@ ALLOWED_HOSTS = ['*']
 # Installed apps
 # ------------------------------
 # Ensure your app(s) are included for test discovery
-INSTALLED_APPS += [
-    'myapp',  # Replace with your app name(s)
-]
-
+# Ensure your app(s) are included for test discovery
+if 'myapp' not in INSTALLED_APPS:
+    INSTALLED_APPS.append('myapp')
 # ------------------------------
 # Database
 # ------------------------------
