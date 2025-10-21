@@ -27,4 +27,5 @@ jobs:
       - name: Run Django tests
         env:
           DJANGO_SECRET_KEY: ${{ secrets.CI_SECRET_KEY }}
+        working-directory: django-ci-cd
         run: python manage.py test --settings=myproject.settings.ci
